@@ -71,6 +71,9 @@ GEM
       mongo (~> 2.1)
       origin (~> 2.2)
       tzinfo (>= 0.3.37)
+    mongoid-grid_fs (2.3.0)
+      mime-types (>= 1.0, < 4.0)
+      mongoid (>= 3.0, < 7.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     origin (2.2.0)
@@ -122,5 +125,6 @@ DEPENDENCIES
   carrierwave
   carrierwave-mongoid
   mongoid
+  mongoid-grid_fs
   rails (= 4.2.6)
   sqlite3

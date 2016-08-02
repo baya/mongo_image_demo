@@ -5,5 +5,5 @@ gem 'sqlite3'
 gem 'carrierwave'
 gem 'carrierwave-mongoid'
 gem 'mongoid'
-
+gem 'mongoid-grid_fs'
 

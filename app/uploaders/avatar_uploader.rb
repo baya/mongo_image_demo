@@ -9,7 +9,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Choose what kind of storage to use for this uploader:
   # storage :file
   # storage :fog
-  storage :grid_fs
+  # storage :grid_fs
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
@@ -49,8 +49,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
   def filename
+    return @token_filename if @token_filename 
     secure_token = SecureRandom.uuid
-    "#{secure_token}.#{file.extension}" if original_filename.present?
+    @token_filename = "#{secure_token}.#{file.extension}" if original_filename.present?
   end
 
 
