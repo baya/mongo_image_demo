@@ -48,5 +48,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  def filename
+    secure_token = SecureRandom.uuid
+    "#{secure_token}.#{file.extension}" if original_filename.present?
+  end
+
 
 end
