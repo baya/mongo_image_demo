@@ -1,0 +1,19 @@
+development:
+  scheme: http
+  host: localhost
+  port: 5555
+  
+test:
+  scheme: http
+  host: localhost
+  port: 5555
+  
+staging:
+  scheme: http
+  host: localhost
+  port: 5555
+  
+production:
+  scheme: http
+  host: localhost
+  port: 5555
