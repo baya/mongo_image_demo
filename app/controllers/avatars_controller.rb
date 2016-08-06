@@ -10,7 +10,9 @@ class AvatarsController < ApplicationController
 
   def create
     @avatar = Avatar.new
-    @avatar.attachment_file_name = params[:avatar][:attachment_file_name]
+    file = params[:avatar][:attachment_file_name]
+    filename = UploadFileService.new(file).call
+    @avatar.attachment_file_name = filename
     if @avatar.save
       redirect_to action: 'index'
     else

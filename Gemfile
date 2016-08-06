@@ -2,8 +2,5 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'sqlite3'
-gem 'carrierwave'
-gem 'carrierwave-mongoid'
-gem 'mongoid'
-gem 'mongoid-grid_fs'
+gem 'mongo', '~> 2.2'
 

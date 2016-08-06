@@ -1,5 +1,5 @@
 <h2>New Avatar</h2>
 <%= form_for @avatar do |f| %>
-  Select an avatar: <%= f.file_field :attachment_file_name %> <br/>
+  Select an avatar: <%= f.file_field :attachment_file_name, multiple: true %> <br/>
   <%= f.submit 'Commit' %>
 <% end %>
