@@ -1,0 +1,19 @@
+development:
+  host: localhost
+  port: 27017
+  database: imgdb
+  
+test:
+  host: localhost
+  port: 27017
+  database: imgdb
+  
+staging:
+  host: localhost
+  port: 27017
+  database: imgdb
+  
+production:
+  host: localhost
+  port: 27017
+  database: imgdb  
